@@ -1,0 +1,14 @@
+spring:
+  data:
+    web:
+      pageable:
+        one-indexed-parameters: true
+  jpa:
+    hibernate:
+      ddl-auto: create-drop #update create-update validate
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+        default_batch_fetch_size: 500
+      database: h2
